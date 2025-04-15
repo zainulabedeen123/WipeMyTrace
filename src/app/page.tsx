@@ -30,10 +30,10 @@ export default function Home() {
           </nav>
           
           <div className="flex items-center gap-4">
-            <Link href="/login" className="btn-outline hidden sm:block">
+            <Link href="/sign-in" className="btn-outline hidden sm:block">
               Log In
             </Link>
-            <Link href="/signup" className="btn-primary">
+            <Link href="/sign-up" className="btn-primary">
               Get Started
             </Link>
             
@@ -59,7 +59,7 @@ export default function Home() {
                   Automate data deletion requests across multiple jurisdictions. Ensure compliance with GDPR, CCPA, and other privacy regulations.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                  <Link href="/signup" className="btn-primary text-center">
+                  <Link href="/sign-up" className="btn-primary text-center">
                     Start Protecting Your Data
                   </Link>
                   <Link href="#how-it-works" className="btn-outline text-center">
@@ -428,7 +428,7 @@ export default function Home() {
                 Join thousands of users who trust Wipe My Trace to protect their personal data.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/signup" className="bg-white text-primary hover:bg-gray-100 font-medium py-2 px-6 rounded-lg transition-colors">
+                <Link href="/sign-up" className="bg-white text-primary hover:bg-gray-100 font-medium py-2 px-6 rounded-lg transition-colors">
                   Get Started Now
                 </Link>
                 <Link href="/contact" className="border border-white text-white hover:bg-white/10 font-medium py-2 px-6 rounded-lg transition-colors">
