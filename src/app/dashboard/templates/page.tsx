@@ -20,7 +20,6 @@ function stripMarkdown(text: string): string {
 
 export default function TemplatesPage() {
   const [loading, setLoading] = useState(false);
-  const [template, setTemplate] = useState('');
   const [editableTemplate, setEditableTemplate] = useState('');
   const [copied, setCopied] = useState(false);
   const templateRef = useRef<HTMLTextAreaElement>(null);
@@ -49,7 +48,6 @@ export default function TemplatesPage() {
         formData.companyDetails
       );
       const cleanTemplate = stripMarkdown(generatedTemplate);
-      setTemplate(cleanTemplate);
       setEditableTemplate(cleanTemplate);
     } catch (error) {
       console.error('Error generating template:', error);
