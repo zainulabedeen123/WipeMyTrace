@@ -21,7 +21,7 @@ export default function Home() {
             <Link href="#how-it-works" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
               How It Works
             </Link>
-            <Link href="#pricing" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+            <Link href="/pricing" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
               Pricing
             </Link>
             <Link href="#faq" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
@@ -352,11 +352,14 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    <button className={`w-full py-2 px-4 rounded-lg font-medium ${
-                      plan.popular ? 'btn-primary' : 'btn-outline'
-                    }`}>
+                    <Link 
+                      href="/account" 
+                      className={`w-full py-2 px-4 rounded-lg font-medium inline-block text-center ${
+                        plan.popular ? 'btn-primary' : 'btn-outline'
+                      }`}
+                    >
                       {plan.cta}
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}
